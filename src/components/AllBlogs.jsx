@@ -48,6 +48,7 @@ const AllBlogs = () => {
     }
   };
 
+  // Load more blogs when "Next" button is clicked
   const handleNext = () => {
     if (nextUrl) {
       setLoading(true);
@@ -64,6 +65,8 @@ const AllBlogs = () => {
         });
     }
   };
+
+  if (loading) return <p>Loading blogs...</p>;
 
   return (
     <div className="container">
