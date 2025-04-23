@@ -1,7 +1,7 @@
 import BlogHero from "./components/BlogHero";
 import AllBlogs from "./components/AllBlogs";
 import Footer from "./components/Footer";
-import Header from "./components/Header/Header";
+import Header from "./components/Header/Header"
 
 function App() {
   return (
