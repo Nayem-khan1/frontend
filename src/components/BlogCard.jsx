@@ -21,12 +21,12 @@ function BlogCard({ blog }) {
             </div>
 
             {/* Read Time */}
-            <p className="absolute top-3 right-3 bg-white text-gray-700 text-sm px-3 py-1 rounded-full shadow">
+            <p className="absolute top-0 right-0 bg-white text-[#01A1A3] text-lg sm:text-xl font-semibold px-3 py-1 shadow ">
                 {blog.read_time_minute} min read
             </p>
 
             {/* Bottom Info */}
-            <div className="absolute bottom-0 w-full bg-white bg-opacity-90 p-4">
+            <div className="absolute bottom-0 w-full bg-white p-4">
                 <div className="flex items-center gap-4 mb-2">
                     <img className="w-10 h-10 rounded-full object-cover" src={blog.author.image} alt={blog.author.full_name} />
                     <div>
@@ -34,7 +34,7 @@ function BlogCard({ blog }) {
                         <p className="text-xs text-gray-500">{new Date(blog.created_at).toLocaleDateString()}</p>
                     </div>
                 </div>
-                <h3 className="text-md font-semibold text-gray-800">{blog.title}</h3>
+                <h3 className="text-md font-semibold text-gray-800 line-clamp-2">{blog.title}</h3>
             </div>
         </div>
     )
