@@ -30,7 +30,7 @@ const Navbar = () => {
             {/* LEFT LOGO */}
             <div> 
                 <Link to="/" className="text-2xl font-medium">
-                E-Mall
+                E-Commerce
                 </Link>
             </div>
             <div className="hidden md:flex space-x-6">
